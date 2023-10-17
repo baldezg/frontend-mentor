@@ -1,0 +1,76 @@
+/*======================== GOOGLE FONTS =========================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&family=Roboto:wght@300;400&family=Syne+Tactile&display=swap');
+
+/*======================== VARIABLES CSS =========================*/
+:root{
+    /*====================== Fonts and typography =======================*/
+    --body-font: 'Poppins', sans-serif;
+    --h1-font-size: 1.3rem;
+}
+/*======================== BASE =========================*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d5e1ef;
+    font-family: var(--body-font);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 7rem 5rem;
+    border-radius: 20px;
+    max-width: 335px;
+}
+
+.qr-code {
+    width: 90%;
+    height: 90%;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+h1, p {
+    margin: 1.3rem;
+    text-align:center;
+}
+h1 {
+    font-weight: 700;
+    font-size: var(--h1-font-size);
+    color: #25304d;
+}
+
+p {
+   font-size: 15px;
+   font-weight: 400;
+   color: #82858e;
+   margin-top: 0px;
+   padding-bottom: 1.5rem;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        margin: 5rem 1.5rem;
+    }
+    
+}
