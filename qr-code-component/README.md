@@ -25,7 +25,7 @@ Responsive QR code component with HTML and CSS.
 
 ### Links
 
-- Solution URL: [Repository](https://github.com/GBaldez/qr-code-component-main)
+- Solution URL: [Repository](https://github.com/baldezg/frontend-mentor/tree/main/qr-code-component)
 - Live Site URL: [Site](https://gbaldez.github.io/qr-code-component-main/)
 
 ### My Process
