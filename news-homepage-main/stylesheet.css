@@ -135,6 +135,7 @@ body {
 .new__article h2:hover {
   color: var(--soft-orange);
 }
+
 .new__article p {
   color: var(--grayish-blue);
   line-height: 1.5em;
@@ -210,4 +211,29 @@ body {
 
 .three {
   grid-area: 3 / 3 / 4 / 4;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+  .grid,
+  .main,
+  .highlights  {
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    display: none;
+  }
+  .banner__img {
+    aspect-ratio:1;
+  }
+  .highlights {
+    gap: 2rem;
+  }
+  .attribution {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+  }
 }
