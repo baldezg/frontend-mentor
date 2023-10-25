@@ -29,6 +29,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: var(--font-size-p);
   padding: 5rem 10rem;
+  overflow-x: hidden;
 }
 
 .header,
@@ -49,8 +50,13 @@ body {
 .header__links a:hover {
   color: var(--soft-red);
 }
+
 .header__links * {
   cursor: pointer;
+}
+
+.header__links-toggle {
+  display: none;
 }
 
 .grid {
@@ -195,8 +201,8 @@ body {
   left: 0;
   width: 100%;
   font-size: 1rem;
-
 }
+
 .attribution a {
   color: var(--soft-orange);
 }
@@ -213,27 +219,96 @@ body {
   grid-area: 3 / 3 / 4 / 4;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 575.98px) {
   body {
     padding: 1rem;
   }
+
   .grid,
   .main,
   .highlights  {
     display: flex;
     flex-direction: column;
   }
-  .header {
-    display: none;
+
+  .header__links {
+    background-color: var(--bg);
+    color: var(--very-dark-blue);
+    flex-direction: column;
+    justify-content: unset;
+    gap: 2rem;
+    inset: 0 0 0 30%;
+    padding: min(30vh, 11rem) 2rem;
+    position: fixed;
+    transform: translateX(100%);
   }
+
+  .header__links[data-visible="true"] {
+    transform: translateX(0);
+  }
+  
+  .header__links-toggle {
+    background: url('./assets/images/icon-menu.svg');
+    background-repeat: no-repeat;
+    border: 0;
+    display: block;
+    position: absolute;
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+    z-index: 9999;
+  }
+
+  .header__links-toggle[aria-expanded="true"] {
+    background-image: url('./assets/images/icon-menu-close.svg');
+  }
+
+  .sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+  }
+
   .banner__img {
     aspect-ratio:1;
   }
+  
   .highlights {
     gap: 2rem;
   }
+
   .attribution {
     margin-top: 2rem;
     padding: 1rem 2rem;
   }
+
+}
+
+@media (max-width: 767.98px) {
+  body {
+    padding: 1rem;
+  }
+
+  .main {
+    gap: 1rem;
+  }
+  
+  .main__heading {
+    grid-area: 2 / 1 / 2 / 3;
+    width: 100%;
+  }
+
+  .main__text {
+    grid-area: 3 / 1 / 3 / 3;
+  }
+
 }

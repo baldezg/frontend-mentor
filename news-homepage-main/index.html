@@ -7,12 +7,20 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
   <title>Frontend Mentor | News homepage</title>
+  <script src="toggleMenu.js" defer></script>
 </head>
 <body>
   <header class="header">
-    <img alt="logo" src="./assets/images/logo.svg"
+    <img alt="logo" src="./assets/images/logo.svg" />
+    <button 
+    aria-controls="header__links" 
+    aria-expanded="false"
+    class="header__links-toggle"
+    >
+    <span class="sr-only">Menu</span>
+    </button>
     <nav>
-      <ul class="header__links">
+      <ul data-visible="false" class="header__links">
         <a><li>Home</li></a>
         <a><li>New</li></a>
         <a><li>Popular</li></a>
