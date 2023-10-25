@@ -1,7 +1,0 @@
-{
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/news-homepage-main", "dest": "/news-homepage-main/index.html" },
-    { "src": "/qr-code-component/(.*)", "dest": "/qr-code-component/$1" },
-  ]
-}
