@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github repository](https://github.com/baldezg/frontend-mentor/tree/main/news-homepage-main)
-- Live Site URL: [Live site URL here](https://frontend-mentor-ce59ktn1f-baldezg.vercel.app/news-homepage-main/index.html)
+- Live Site URL: [Live site URL here](https://frontend-mentor-ce59ktn1f-baldezg.vercel.app/news-homepage-main/index.html){target="_blank"}
 
 ## My process
 
